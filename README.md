@@ -1,12 +1,21 @@
-# Yunny
+# Yummy
 
-## Підготовка до роботи
+## How to use the repository
 
-1. Переконайся що на комп'ютері встановлено LTS-версія Node.js.
-   [Завантаж і встанови](https://nodejs.org/en/) її якщо необхідно.
-2. Встанови базові залежності проєкту командою `npm install`.
-3. Запусти режим розробки, виконавши команду `npm start`.
-4. Перейди в браузері за адресою [http://localhost:3000](http://localhost:3000).
-   Ця сторінка буде автоматично перезавантажуватися після збереження змін у файлах проєкту.
+1. Clone the repository: `git clone https://github.com/SevchenkoOl/yummy.git`
+
+2. Make sure you have the LTS version of Node.js installed on your computer.
+[Download and install](https://nodejs.org/en/) as necessary.
+
+3. Install the basic components of the project using the `npm install` command.
+
+4. Start the development mode by running the `npm start` command.
+
+5. Go to the browser to the address [http://localhost:3000](http://localhost:3000).
+ This side will be automatically re-enabled after saving changes to the project files.
+
+## Author
+This repository was created and maintained by [Alexey Shevchenko](https://shevchenkool.github.io/portfolio/). Questions, suggestions and feedback can be sent to [email](uzlabini@gmail.com) or [linkedin profile](linkedin.com/in/oleksii-shevchenko-535ab61b8).
+If you have any questions or suggestions, feel free to create an issue or submit a pull request.
 
 
