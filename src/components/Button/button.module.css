@@ -1,0 +1,15 @@
+.button {
+  width: 239px;
+  height: 61px;
+  font: var(--btn-font);
+  background-color: transparent;
+  color: var(--lighth-green-color);
+  border-radius: 24px 44px;
+  border: 1px solid var(--lighth-green-color);
+}
+
+.button:hover,
+.button:focus {
+  background-color: var(--lighth-green-color);
+  color: var(--primary-white-color);
+}
