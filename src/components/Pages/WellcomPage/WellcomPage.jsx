@@ -1,6 +1,11 @@
+<<<<<<< HEAD
 import Button from 'components/Button/Button';
 import style from './wellcomPage.module.css';
 import { Link } from 'react-router-dom';
+=======
+import Logo from 'components/Ul/Logo/Logo';
+import style from './wellcomPage.module.css';
+>>>>>>> bb11fae16e621aa8228eab76b26286559788e885
 
 const WellcomPage = ({ title, mainText }) => {
   const icon = (
@@ -38,7 +43,11 @@ const WellcomPage = ({ title, mainText }) => {
 
   return (
     <div className={style.container}>
+<<<<<<< HEAD
       <div>{icon}</div>
+=======
+    <Logo />
+>>>>>>> bb11fae16e621aa8228eab76b26286559788e885
       <h1 className={style.title}>{title}</h1>
       <p className={style.mainText}>{mainText}</p>
       <div>
