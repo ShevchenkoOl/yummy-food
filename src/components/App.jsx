@@ -16,7 +16,7 @@ export const App = () => {
   <Routes>
     <Route path="/register" component={RegistrPage} />
     <Route path="/signin" component={SigninPage} />
-    <Route path="/" component={WellcomPage} />
+    {/* <Route path="/" component={WellcomPage} /> */}
   </Routes>
 </Router>
 {/* <WellcomPage title={title} mainText={text}/> */}
