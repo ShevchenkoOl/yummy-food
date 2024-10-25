@@ -2,7 +2,7 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import RegistrPage from "./Pages/RegisterPage/RegisterPage,";
 import SigninPage from "./Pages/SigninPage/SigninPage";
-import WellcomPage from "./Pages/WellcomPage/WellcomPage";
+// import WellcomPage from "./Pages/WellcomPage/WellcomPage";
 // import SigninPage from "./Pages/SigninPage/SigninPage";
 // import WellcomPage from "./Pages/WellcomPage/WellcomPage";
 
