@@ -1,11 +1,69 @@
-.icon {
-    width: 40px;
-    height: 40px;
-    top: 87px;
-    left: 198px;
-    background: var(--lighth-green-color);
-    padding: 14px 24px 14px 24px;
-    gap: 8px;
-    border-radius: 12px;
-    /* opacity: 0; */
+.container {
+  background-image: url('../../../images/welcome-background.jpg'); /* Подставьте правильный путь к вашему изображению */
+  background-size: cover; /* Масштабирование изображения по размеру контейнера */
+  background-position: center; /* Центрирование изображения в контейнере */
+  height: 100vh; /* Высота контейнера на весь экран */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.title {
+  max-width: 288px;
+  font: var(--h1-font);
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: var(--primary-white-color);
+  margin-top: 20px;
+  margin-bottom: 10;
+}
+
+.mainText {
+  max-width: 540px;
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: var(--primary-white-color);
+  margin-bottom: 30px;
+}
+
+.btnReg {
+    width: 184px;
+    height: 67px;
+    background-color: var(--light-green-color);
+    border: 1px solid var(--lighth-green-color);
+    margin-right: 20px; 
+  }
+  
+  @media screen and (max-width: 384px) {
+    
+    .btnReg {
+        margin-bottom: 20px; 
     }
+  }
+  .btnReg:hover,
+  .btnReg:focus {
+    background-color: var(--primary-black-color);
+    color: var(--primary-white-color);
+  }
+
+  .btnSing {
+    width: 141px;
+    height: 67px;
+    border: 1px solid var(--primary-white-color);
+   
+  
+  }
+  
+  .btnSing:hover,
+  .btnSing:focus {
+    border: 1px solid var(--light-green-color);
+    color: var(--light-green-color);
+  }

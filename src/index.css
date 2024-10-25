@@ -15,16 +15,18 @@ code {
 }
 
 :root {
-  --title-text-color: #212121;
-  --primary-white-color: #FFFFFF;
-  --lighth-green-color: #8BAA36;
+  --primary-black-color: #212121;
+  --primary-white-color: #FAFAFA;
+  --light-green-color: #8BAA36;
   --light-black-color: #22252A;
 
+  --h1-font: 600 28px/28px Poppins;
   --btn-font: 400 16px/24px Poppins;
 
-  --border-color-1px-solid: 1px solid #EEEEEE;
+  --border-color-1px-solid: 1px solid #300c0c;
   --border-color-header: 1px solid #ECECEC;
   --background-gray: #F5F4FA;
   --icons-gray: #AFB1B8;
   --black-gray-transparent: rgba(47, 48, 58, 0.4);
 }
+
