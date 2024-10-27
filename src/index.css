@@ -22,6 +22,7 @@ code {
 
   --h1-font: 600 28px/28px Poppins;
   --btn-font: 400 16px/24px Poppins;
+  --btn-font-mobile: 400 14px/21px Poppins;
 
   --border-color-1px-solid: 1px solid #300c0c;
   --border-color-header: 1px solid #ECECEC;
