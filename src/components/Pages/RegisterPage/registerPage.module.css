@@ -1,6 +1,6 @@
  .container {
   width: 100%;
-  position: absolute;
+  position: relative;
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -15,8 +15,8 @@
   width: 532px;
   margin-top: 115px;
   background-image: url('../../../images/registrPage.png'); /* Фон для десктопа */
-  background-size: cover; /* Масштабируем фон */
-  background-position: center; /* Центрируем фон */
+  background-size: cover;
+  background-position: center;
 }
 
 .sectionForm {
@@ -62,7 +62,12 @@ width: 100%;
   max-width: 484px;
   display: flex;
   justify-content: center;
-  margin-bottom: 80px;
+}
+
+.sectionForm, .linkContainer {
+  width: 100%;
+  max-width: 484px;
+  margin: 0 auto;
 }
 
 .linkSingIn {
@@ -74,6 +79,13 @@ width: 100%;
 .linkSingIn:hover,
 .linkSingIn:focus {
   color: var(--light-green-color);
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1600px;
+    margin: 0 auto;
+  }
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
