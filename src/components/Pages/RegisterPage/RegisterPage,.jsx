@@ -1,5 +1,4 @@
 import style from './registerPage.module.css';
-import image from '../../../images/registrPage.png';
 import Input from 'components/Ul/Input/Input';
 import iconUser from '../../../images/icon-user.svg';
 import iconEmail from '../../../images/icon-email.svg';
