@@ -1,32 +1,44 @@
-.container {
-  /* width: 500px;
-  height: 484px; */
+ .container {
+  width: 100%;
+  position: absolute;
   display: flex;
   flex-direction: column;
-  /* align-items: left; */
-  /* background-color: #2a2c36;
-  border-radius: 30px; */
-  /* margin-top: 122px;
-  margin-left: 760px; */
-  justify-content: space-between; /* Размещаем элементы с равными отступами между ними */
-  align-items: center; /* Центрируем элементы по вертикали */
-  padding: 0 20px; /* Добавляем отступы от краев контейнера */
+  height: 100vh;
+  align-items: center;
+  justify-content: space-around;
+  box-sizing: border-box;
+  flex-wrap: wrap;
 }
 
 .section {
-  flex: 1; /* Каждому элементу (изображению и форме) даем равное пространство */
-  margin: 0 10px; /* Отступы между элементами */
-}
-
-.img {
-  width: 532px; /* Задаем ширину изображения, чтобы оно заполняло контейнер */
   height: 468px;
-  /*width: 100%; /* Задаем ширину изображения, чтобы оно заполняло контейнер */
-  /*height: auto; Сохраняем пропорции изображения*/
+  width: 532px;
+  margin-top: 115px;
+  background-image: url('../../../images/registrPage.png'); /* Фон для десктопа */
+  background-size: cover; /* Масштабируем фон */
+  background-position: center; /* Центрируем фон */
 }
 
 .sectionForm {
-  flex: 1; /* Форме также даем равное пространство */
+  max-width: 484px;
+  height: auto;
+  padding: 50px 50px 44px;
+  margin-top: 122px;
+  border-radius: 2vw;
+  background-color: var(--background-black-color);
+  box-sizing: border-box;
+  }
+
+.wave {
+position: absolute;
+bottom: 0;
+z-index: -1;
+width: 100%;
+}
+
+.wave svg {
+  width: 100%;
+  height: 100%;
 }
 
 .title {
@@ -34,60 +46,92 @@
   font-size: 28px;
   font-weight: 600;
   line-height: 30px;
-  letter-spacing: -0.02em;
-  /* text-align: center; */
+  letter-spacing: -2%;
   color: var(--primary-white-color);
-  /* text-align: center; */
   margin-top: 44px;
-  margin-left: 50px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .form {
   display: flex;
   flex-direction: column;
-  margin-left: 50px;
+  gap: 24px;
 }
 
-.form > div {
-  margin-bottom: 20px;
+.linkContainer {
+  max-width: 484px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 80px;
 }
 
-input {
-  width: 400px;
-  height: 59px;
-
-  font-size: 16px;
-  border: 1px solid var(--primary-white-color);
-  border-radius: 3px;
-  background-color: transparent;
-  color: var(--primary-white-color);
-
-  /* width: Fixed (86px)px;
-height: Hug (27px)px;
-top: 16px;
-left: 18px;
-gap: 8px;
-opacity: 0px; */
-}
-
-.btn {
-  width: 400px;
-  height: 59px;
+.linkSingIn {
   font: var(--btn-font);
-
-  margin-top: 20px;
-
-  padding: 21px 138px 21px 138px;
-
-  border-radius: 6px 0px 0px 0px;
-  border: 1px solid var(--light-green-color);
-  background-color: var(--light-green-color);
   color: var(--primary-white-color);
-  cursor: pointer;
+  transition: color 0.3s ease, transform 0.3s ease;
 }
 
-.btn:hover,
-.btn:focus {
-  color: var(--primary-black-color);
+.linkSingIn:hover,
+.linkSingIn:focus {
+  color: var(--light-green-color);
 }
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .container {
+    display: block;
+  }
+
+  .section {
+    height: 359px;
+    width: 409px;
+    background-image: url('../../../images/registPageTablet.png'); /* Фон для десктопа */
+    background-size: cover; /* Масштабируем фон */
+    background-position: center; /* Центрируем фон */
+    margin: 96px auto -20px auto;
+  }
+
+  .sectionForm,
+  .linkContainer
+   {
+    max-width: 500px; 
+    margin: 0 auto;
+  }
+
+  .wave {
+    position: absolute;
+    bottom: -270px;
+    z-index: -1;
+    width: 100%;
+    height: 580px;
+    background-color: #1E1F28;   
+  }
+  .wave svg {
+    width: 100%;
+    position: absolute;
+    height: auto;
+    top:-26px;
+  }
+
+  .linkSingIn {
+    margin-top: 10px;
+  }
+}
+
+/* @media (max-width: 769px) {
+  .container {
+    display: block;
+  }
+
+  .section {
+    height: 285px;
+    width: 250px;
+    margin: 87px auto -35px auto;
+  }
+  .sectionForm,
+  .linkContainer
+   {
+    width: 100%; 
+    margin: 0 auto;
+  }
+
+} */

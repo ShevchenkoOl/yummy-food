@@ -1,0 +1,17 @@
+.inputContainer {
+    display: flex;
+    align-items: center; /* Центруем иконку и инпут по вертикали */
+    position: relative;
+  }
+  
+  .icon {
+    position: absolute; /* Позволяет разместить иконку внутри инпута */
+    left: 10px; /* Отступ от левого края инпута */
+    pointer-events: none; /* Иконка не будет перехватывать клики */
+  }
+  
+  .input {
+    border-radius: 6px;
+    padding-left: 50px; /* Отступ слева, чтобы текст не перекрывал иконку */
+  }
+  
