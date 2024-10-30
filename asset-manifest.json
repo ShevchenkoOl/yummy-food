@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/yummy-food/static/css/main.cf340e84.css",
+    "main.css": "/yummy-food/static/css/main.c5e38c00.css",
     "main.js": "/yummy-food/static/js/main.79253ca1.js",
     "static/media/welcome-background.jpg": "/yummy-food/static/media/welcome-background.254e886088b7376ffb7a.jpg",
     "static/media/registrPage.png": "/yummy-food/static/media/registrPage.36007b4b4db29afd026f.png",
@@ -10,11 +10,11 @@
     "static/media/icon-email.svg": "/yummy-food/static/media/icon-email.da87fbbdca04bee48afcca01b8e9a712.svg",
     "static/media/icon-password.svg": "/yummy-food/static/media/icon-password.824aef1b55b1ca6d7a101b4a8af19125.svg",
     "static/media/icon-user.svg": "/yummy-food/static/media/icon-user.ae76d93cf4dc11b69440146299d8192f.svg",
-    "main.cf340e84.css.map": "/yummy-food/static/css/main.cf340e84.css.map",
+    "main.c5e38c00.css.map": "/yummy-food/static/css/main.c5e38c00.css.map",
     "main.79253ca1.js.map": "/yummy-food/static/js/main.79253ca1.js.map"
   },
   "entrypoints": [
-    "static/css/main.cf340e84.css",
+    "static/css/main.c5e38c00.css",
     "static/js/main.79253ca1.js"
   ]
 }
