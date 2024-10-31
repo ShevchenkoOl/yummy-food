@@ -1,10 +1,10 @@
 import style from './registerPage.module.css';
-import Input from 'components/Ul/Input/Input';
 import iconUser from '../../../images/icon-user.svg';
 import iconEmail from '../../../images/icon-email.svg';
 import iconPassword from '../../../images/icon-password.svg';
 import Button from 'components/Ul/Button/Button';
 import { Link } from 'react-router-dom';
+import Input from 'components/Ul/Input/Input';
 
 const RegistrPage = () => {
   return (

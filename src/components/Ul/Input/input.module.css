@@ -15,6 +15,11 @@
   padding-left: 50px;
 }
 
+.input:hover,
+.input:hover{
+  border: 2px solid var(--primary-white-color);
+}
+
 @media (max-width: 769px) {
   .input {
     width: 279px;

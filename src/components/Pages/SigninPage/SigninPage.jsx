@@ -1,9 +1,9 @@
 import style from './signinPage.module.css';
-import Input from 'components/Ul/Input/Input';
 import iconEmail from '../../../images/icon-email.svg';
 import iconPassword from '../../../images/icon-password.svg';
 import Button from 'components/Ul/Button/Button';
 import { Link } from 'react-router-dom';
+import Input from 'components/Ul/Input/Input';
 
 const SigninPage = () => {
     return (
@@ -28,7 +28,7 @@ const SigninPage = () => {
         <Link to="/register" className={style.linkReg}>
           Registration
         </Link>
-      </div>
+      </div> 
       <div className={style.wave}>
         <svg
           width="1440"
