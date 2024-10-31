@@ -1,4 +1,4 @@
- .container {
+.container {
   width: 100%;
   position: relative;
   display: flex;
@@ -27,13 +27,13 @@
   border-radius: 2vw;
   background-color: var(--background-black-color);
   box-sizing: border-box;
-  }
+}
 
 .wave {
-position: absolute;
-bottom: 0;
-z-index: -1;
-width: 100%;
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+  width: 100%;
 }
 
 .wave svg {
@@ -64,7 +64,8 @@ width: 100%;
   justify-content: center;
 }
 
-.sectionForm, .linkContainer {
+.sectionForm,
+.linkContainer {
   width: 100%;
   max-width: 484px;
   margin: 0 auto;
@@ -83,7 +84,7 @@ width: 100%;
 
 @media (min-width: 1024px) {
   .container {
-    max-width: 1600px;
+    max-width: 1300px;
     margin: 0 auto;
   }
 }
@@ -97,15 +98,14 @@ width: 100%;
     height: 359px;
     width: 409px;
     background-image: url('../../../images/registPageTablet.png'); /* Фон для десктопа */
-    background-size: cover; /* Масштабируем фон */
-    background-position: center; /* Центрируем фон */
+    background-size: cover;
+    background-position: center;
     margin: 96px auto -20px auto;
   }
 
   .sectionForm,
-  .linkContainer
-   {
-    max-width: 500px; 
+  .linkContainer {
+    max-width: 500px;
     margin: 0 auto;
   }
 
@@ -115,13 +115,13 @@ width: 100%;
     z-index: -1;
     width: 100%;
     height: 580px;
-    background-color: #1E1F28;   
+    background-color: #1e1f28;
   }
   .wave svg {
     width: 100%;
     position: absolute;
     height: auto;
-    top:-26px;
+    top: -26px;
   }
 
   .linkSingIn {
@@ -129,21 +129,55 @@ width: 100%;
   }
 }
 
-/* @media (max-width: 769px) {
+@media (max-width: 769px) {
   .container {
     display: block;
   }
 
-  .section {
-    height: 285px;
-    width: 250px;
-    margin: 87px auto -35px auto;
-  }
-  .sectionForm,
-  .linkContainer
-   {
-    width: 100%; 
-    margin: 0 auto;
+  .title {
+    font-size: 24px;
+    line-height: 28px;
+    margin: 0;
+    margin-bottom: 10px;
   }
 
-} */
+  .section {
+    height: 250px;
+    width: 285px;
+    margin: 87px auto -35px auto;
+  }
+  .sectionForm {
+    height: 350px;
+    width: 335px;
+    padding: 32px 28px;
+
+    margin: 0 auto;
+  }
+  .linkContainer {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .icon {
+    width: 18px;
+    height: 18px;
+  }
+  .wave {
+    position: absolute;
+    bottom: -300px;
+    z-index: -1;
+    width: 100%;
+    height: 580px;
+    background-color: #1e1f28;
+  }
+  .wave svg {
+    width: 100%;
+    position: absolute;
+    height: auto;
+    top: -26px;
+  }
+
+  .linkSingIn {
+    margin-top: 10px;
+    font: var(--btn-font-mobile);
+  }
+}

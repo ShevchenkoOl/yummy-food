@@ -1,17 +1,25 @@
 .inputContainer {
-    display: flex;
-    align-items: center; /* Центруем иконку и инпут по вертикали */
-    position: relative;
-  }
-  
-  .icon {
-    position: absolute; /* Позволяет разместить иконку внутри инпута */
-    left: 10px; /* Отступ от левого края инпута */
-    pointer-events: none; /* Иконка не будет перехватывать клики */
-  }
-  
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.icon {
+  position: absolute;
+  left: 10px;
+  pointer-events: none;
+}
+
+.input {
+  border-radius: 6px;
+  padding-left: 50px;
+}
+
+@media (max-width: 769px) {
   .input {
-    border-radius: 6px;
-    padding-left: 50px; /* Отступ слева, чтобы текст не перекрывал иконку */
+    width: 279px;
+    height: 45px;
+    padding-left: 30px;
+    font-size: 14px;
   }
-  
+}

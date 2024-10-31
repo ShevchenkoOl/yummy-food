@@ -14,14 +14,16 @@ const RegistrPage = () => {
       <div className={style.sectionForm}>
         <h2 className={style.title}>Registration</h2>
         <form className={style.form}>
-          <Input name="Name" icon={<img src={iconUser} alt="icon-user" />} />
+          <Input name="Name"
+            icon={<img src={iconUser} alt="icon-user" className={style.icon}/>}
+          />
           <Input
             name="Email"
-            icon={<img src={iconEmail} alt="icon-evelope" />}
+            icon={<img src={iconEmail} alt="icon-evelope" className={style.icon} />}
           />
           <Input
             name="Password"
-            icon={<img src={iconPassword} alt="icon-lock" />}
+            icon={<img src={iconPassword} alt="icon-lock" className={style.icon} />}
           />
           <Button text="Sing up" addClass="singUp" />
         </form>

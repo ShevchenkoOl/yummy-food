@@ -22,7 +22,7 @@
   height: 67px;
   background-color: transparent;
   border: 1px solid white;
-  transition: color 0.3s ease, transform 0.3s ease;  
+  transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .btnRegistr:hover,
@@ -38,17 +38,17 @@
   color: var(--light-green-color);
 }
 
-.singUp{
+.singUp {
   height: 59px;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: var(--light-green-color);
   border-radius: 6px;
-  margin-top: 26px;
+  /* margin-top: 26px; */
   line-height: 18px;
   transition: color 0.3s ease, transform 0.3s ease;
- }
+}
 
 .singUp:hover,
 .singUp:focus {
@@ -58,7 +58,7 @@
 }
 
 @media (max-width: 768px) {
-  .btn{
+  .btn {
     font: var(--btn-font-mobile);
   }
 
@@ -66,9 +66,14 @@
     width: 135px;
     height: 45px;
   }
-  
+
   .btnSingIn {
     width: 95px;
+    height: 45px;
+  }
+
+  .singUp {
+    width: 279px;
     height: 45px;
   }
 }
