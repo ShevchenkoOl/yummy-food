@@ -84,7 +84,7 @@
 
 @media (min-width: 1024px) {
   .container {
-    max-width: 1300px;
+    max-width: 1400px;
     margin: 0 auto;
   }
 }
@@ -97,7 +97,7 @@
   .section {
     height: 359px;
     width: 409px;
-    background-image: url('../../../images/registPageTablet.png'); /* Фон для десктопа */
+    background-image: url('../../../images/registPageTablet.png');
     background-size: cover;
     background-position: center;
     margin: 96px auto -20px auto;
@@ -157,11 +157,6 @@
   .linkContainer {
     width: 100%;
     margin: 0 auto;
-  }
-
-  .icon {
-    width: 18px;
-    height: 18px;
   }
 
   .wave {

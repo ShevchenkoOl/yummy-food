@@ -1,29 +1,47 @@
 import style from './registerPage.module.css';
-import iconUser from '../../../images/icon-user.svg';
-import iconEmail from '../../../images/icon-email.svg';
-import iconPassword from '../../../images/icon-password.svg';
+import { FaRegUser } from 'react-icons/fa';
+import { MdMailOutline } from 'react-icons/md';
+import { FiLock } from 'react-icons/fi';
 import Button from 'components/Ul/Button/Button';
 import { Link } from 'react-router-dom';
 import Input from 'components/Ul/Input/Input';
 
 const RegistrPage = () => {
+  const validateEmail = inputValue => {
+    if (inputValue.includes('@')) {
+      return { isValid: true };
+    }
+    return { isValid: false };
+  };
+
+  const validatePassword = inputValue => {
+    if (inputValue.length < 6) {
+      return { isValid: true, isWeakPassword: true }; // Слабый пароль
+    }
+    return { isValid: inputValue.length >= 6 };
+  };
+
   return (
     <div className={style.container}>
-      <div className={style.section}>
-      </div>
+      <div className={style.section}></div>
       <div className={style.sectionForm}>
         <h2 className={style.title}>Registration</h2>
         <form className={style.form}>
-          <Input name="Name"
-            icon={<img src={iconUser} alt="icon-user" className={style.icon}/>}
+          <Input
+            name="Name"
+            icon={<FaRegUser />}
+            validate={() => ({ isValid: true })}
           />
           <Input
             name="Email"
-            icon={<img src={iconEmail} alt="icon-evelope" className={style.icon} />}
+            icon={<MdMailOutline />}
+            validate={validateEmail}
           />
           <Input
             name="Password"
-            icon={<img src={iconPassword} alt="icon-lock" className={style.icon} />}
+            icon={<FiLock />}
+            type="password"
+            validate={validatePassword}
           />
           <Button text="Sing up" addClass="singUp" />
         </form>
