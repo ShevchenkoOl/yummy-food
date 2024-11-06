@@ -95,7 +95,7 @@
   }
 
   .section {
-    height: 359px;
+    height: 250px;
     width: 409px;
     background-image: url('../../../images/registPageTablet.png');
     background-size: cover;
@@ -132,6 +132,7 @@
 @media (max-width: 769px) {
   .container {
     display: block;
+    height: 450px;
   }
 
   .title {
@@ -143,7 +144,7 @@
 
   .section {
     height: 250px;
-    width: 285px;
+    width: 335px;
     margin: 87px auto -35px auto;
   }
 
@@ -155,7 +156,7 @@
   }
 
   .linkContainer {
-    width: 100%;
+    width: 335px;
     margin: 0 auto;
   }
 
@@ -163,7 +164,7 @@
     position: absolute;
     bottom: -200px;
     z-index: -1;
-    width: 100%;
+    min-width: 335px;
     height: 480px;
     background-color: #1e1f28;
   }

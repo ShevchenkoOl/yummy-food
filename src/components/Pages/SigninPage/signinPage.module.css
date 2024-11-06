@@ -96,7 +96,7 @@
   }
 
   .section {
-    height: 359px;
+    height: 250px;
     width: 409px;
     background-image: url('../../../images/registPageTablet.png'); /* Фон для десктопа */
     background-size: cover;
@@ -133,6 +133,7 @@
 @media (max-width: 769px) {
   .container {
     display: block;
+    height: 450px;
   }
 
   .title {
@@ -144,7 +145,7 @@
 
   .section {
     height: 250px;
-    width: 285px;
+    width: 335px;
     margin: 87px auto -35px auto;
   }
   .sectionForm {
@@ -155,7 +156,7 @@
     margin: 0 auto;
   }
   .linkContainer {
-    width: 100%;
+    width: 335px;
     margin: 0 auto;
   }
   .icon {
@@ -166,7 +167,7 @@
     position: absolute;
     bottom: -300px;
     z-index: -1;
-    width: 100%;
+    min-width: 335px;
     height: 580px;
     background-color: #1e1f28;
   }
