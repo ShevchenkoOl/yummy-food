@@ -1,4 +1,5 @@
-# Yummy
+# Yummy Food Application
+This project was built using [React](https://react.dev/) and the following libraries: [react-router](https://reactrouter.com/en/main), [react-icons](https://react-icons.github.io/react-icons/),
 
 ## How to use the repository
 
